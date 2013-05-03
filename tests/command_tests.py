@@ -50,7 +50,7 @@ class Test(unittest.TestCase):
         opts = {}
         args = ['testenv','2.7','target_path='+self.stage_dir,'related-projects=shooter,bower']
         call_command('eclipse', *args, **opts)
-        self._verifiy_fixtures('plain')
+        self._verifiy_fixtures('rel')
         
     def _verifiy_fixtures(self,test_case):
         self.assertTrue( filecmp.cmp(os.path.join(self.stage_dir,'.project'), "fixtures/fixture.%s.project" % test_case) , ".project file not as expected")
