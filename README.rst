@@ -57,3 +57,17 @@ Notes
 =====
 
 I created this because I hate comming IDE related files ( and I hate to find repos with those file already there)
+
+Tested on Windows and OSX, Eclipse Juno Service Release 2, PyDev 2.7.3
+
+Code coverage:
+
+Name                                      Stmts     Miss      Cover  Missing
+-----------------------------------------------------------------------------
+__init__.py                                   -        -         -   
+management\__init__.py                        -        -         -   
+management\commands\__init__.py               -        -         -   
+management\commands\eclipse.py               61        -       100%  
+..agement\commands\resources\__init__.py      -        -         -   
+-----------------------------------------------------------------------------
+TOTAL                                        61        -       100%  
