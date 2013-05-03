@@ -10,8 +10,8 @@ setup(
     author='sammyrulez',
     url='https://github.com/sammyrulez/django_pydev_command',
     license='BSD',
-    packages=find_packages(exclude=('tests')),
-    package_dir = {'': 'src'},
+	package_dir = {'': 'src'},
+    packages=find_packages(),   
     py_modules=['pydev'],
     install_requires=['django']
 )
