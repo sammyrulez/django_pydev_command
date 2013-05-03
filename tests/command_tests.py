@@ -1,8 +1,3 @@
-'''
-Created on 02/mag/2013
-
-@author: sreghenzi
-'''
 import unittest
 import os
 import filecmp

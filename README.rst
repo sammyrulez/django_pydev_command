@@ -41,7 +41,7 @@ where
 
 1. **interpeter_name** is the name of a python interpeter enviroment defined in the eclipse target workspace
 
-2. **python_version** is the verscion of the python interpeter you are ging to use
+2. **python_version** is the verscion of the python interpeter you are going to use
 
 Other options are:
 
@@ -49,14 +49,14 @@ Other options are:
 
 - **related-projects** projects in the target eclipse workspace you want to add to this project PYTHON_PATH
 
-- **--src** adopt the "source forlder" pydev convention ( all source files of the application in a folder named ''src'')
+- **--src** adopt the "source folder" pydev convention ( all source files of the application in a folder named ''src'')
 
 
 
 Notes
 =====
 
-I created this because I hate comming IDE related files ( and I hate to find repos with those file already there)
+I created this because I hate to commit IDE related files ( and I hate to find repos with those file already there)
 
 Tested on Windows and OSX, Eclipse Juno Service Release 2, PyDev 2.7.3
 
