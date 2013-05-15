@@ -4,6 +4,8 @@ Django PyDev Management Command
 
 This is a Djnago app that adds a managment command to create the required files to open your Django project with a PyDev powered Eclipse.
 
+.. image:: https://travis-ci.org/sammyrulez/django_pydev_command.png?branch=master
+
 ************
 Intsallation
 ************
