@@ -1,7 +1,6 @@
 import unittest
 import os
 import filecmp
-from pydev.management.commands.eclipse import Command
 from django.core.management import call_command
 
 
@@ -9,8 +8,7 @@ class Test(unittest.TestCase):
     
     stage_dir= os.path.join(os.path.dirname(os.path.abspath(__file__)),"staging")
 
-    def setUp(self):
-        self.command = Command()       
+    def setUp(self):   
         self.assure_path_exists()
         try:
             os.remove(os.path.join(self.stage_dir,'.project'))
