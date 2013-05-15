@@ -17,7 +17,7 @@ class Test(unittest.TestCase):
             pass
 
     def assure_path_exists(self):
-        print "Staging dir: " , self.stage_dir   
+        print("Staging dir: " , self.stage_dir)   
         if not os.path.exists( self.stage_dir):
                 os.makedirs( self.stage_dir)
                 print "Staging created"

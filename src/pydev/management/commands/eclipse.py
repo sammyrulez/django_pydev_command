@@ -92,5 +92,5 @@ class Command(BaseCommand):
         prj_out_txt = prj_out_txt % filling_data
         prj_out_file = open(dest_file_name, 'w')
         prj_out_file.write(prj_out_txt)
-        print "Generated "  , os.path.abspath(dest_file_name)
+        print("Generated "  , os.path.abspath(dest_file_name))
         prj_out_file.close()
