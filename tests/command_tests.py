@@ -46,8 +46,8 @@ class Test(unittest.TestCase):
         self._verifiy_fixtures('rel')
         
     def _verifiy_fixtures(self,test_case):
-        self.assertTrue( filecmp.cmp(os.path.join(self.stage_dir,'.project'), "fixtures/fixture.%s.project" % test_case) , ".project file not as expected")
-        self.assertTrue( filecmp.cmp(os.path.join(self.stage_dir,'.pydevproject'), "fixtures/fixture.%s.pydevproject " % test_case) , ".pydevproject file not as expected")
+        self.assertTrue( filecmp.cmp(os.path.join(self.stage_dir,'.project'), os.path.join(os.path.dirname(os.path.abspath(__file__)),"fixtures/fixture.%s.project" % test_case)) , ".project file not as expected")
+        self.assertTrue( filecmp.cmp(os.path.join(self.stage_dir,'.pydevproject'), os.path.join(os.path.dirname(os.path.abspath(__file__)),"fixtures/fixture.%s.pydevproject " % test_case)) , ".pydevproject file not as expected")
 
 
 if __name__ == "__main__":

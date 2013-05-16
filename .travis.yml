@@ -4,7 +4,7 @@ python:
 # command to install dependencies
 install: 
   - pip install -r requirements.txt --use-mirrors
-  - export PYTHONPATH=$PYTHONPATH:./tests
+  - export DJANGO_SETTINGS_MODULE=pydevcmd.settings
   - python setup.py install
 # command to run tests
 script: python tests/command_tests.py
